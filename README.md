@@ -3,7 +3,7 @@ ui-ace add-on
 
 This ui-ace add-on uses as the name implies the ui-ace plugin to provide a ace editor for schema form. [ace](https://github.com/ajaxorg/ace) as well as [ui-ace](https://github.com/angular-ui/ui-ace) is used.
 
-ace is highly customizable and this add-on takes an options object via `aceOptions` in the form. More info below at [Options](#Options).
+ace is highly customizable and this add-on takes an options object via `aceOptions` in the form. More info below at [Options](#options).
 
 Installation
 ------------
@@ -41,7 +41,7 @@ Example
 
 Usage
 -----
-The tinymce add-on adds a new form type, `wysiwyg`, and a new default
+The tinymce add-on adds a new form type, `ace`, and a new default
 mapping.
 
 |  Form Type     |   Becomes    |
@@ -52,6 +52,16 @@ mapping.
 | Schema             |   Default Form type  |
 |:-------------------|:------------:|
 | "type": "string"   |   ace   |
+
+To make it visible and further customize its appearance, the .ace_editor css-class has to be defined:
+
+```css
+.ace_editor {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+    }
+```
 
 
 Options
